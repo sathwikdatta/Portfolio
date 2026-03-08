@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 180">
+  <rect width="440" height="180" fill="#d9d9d9" />
+  <path id="ascendion-arc" d="M 70 122 Q 220 56 370 122" fill="none" />
+  <text
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="50"
+    font-weight="900"
+    letter-spacing="1.5"
+    fill="#000"
+  >
+    <textPath href="#ascendion-arc" startOffset="50%" text-anchor="middle">
+      ASCENDION
+    </textPath>
+  </text>
+</svg>
