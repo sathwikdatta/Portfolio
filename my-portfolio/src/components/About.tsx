@@ -16,7 +16,7 @@ const About = () => {
     })
     return (
         <>
-            <div data-aos="zoom-out-up" data-aos-duration="800" className="mt-28 flex relative overflow-hidden justify-center items-center font-mono px-10 py-10 sm-mx:px-4 xs-mx:px-2 xs-mx:py-4 h-fit md-mx:px-6" id="About">
+            <div data-aos="zoom-out-up" data-aos-duration="800" className="mt-28 w-full flex relative overflow-hidden justify-center items-center font-mono px-10 py-10 sm-mx:px-4 xs-mx:px-2 xs-mx:py-4 h-fit md-mx:px-6" id="About">
                 <Particles
                     className="absolute -z-20 inset-0"
                     quantity={1000}
@@ -26,7 +26,7 @@ const About = () => {
                     color="#64FFDA"
                     refresh
                 />
-                <div className="w-full max-w-5xl flex flex-col gap-3">
+                <div className="w-full max-w-5xl mx-auto flex flex-col gap-3">
                     <div className="text-primaryColor text-3xl lg-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg font-semibold tracking-wide">Hi, I am</div>
                     <div className="text-white text-[4.6rem] leading-[1.05] font-extrabold lg-mx:text-5xl sm-mx:text-4xl xs-mx:text-3xl xsm-mx:text-[27px]">{Info.name}</div>
                     <div className="text-white text-[2.45rem] flex font-semibold lg-mx:text-[27px] sm-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg">I'm a&nbsp;<span className="text-primaryColor"><Typewriter options={{ strings: Info.stack, autoStart: true, loop: true, }} /> </span></div>
