@@ -1,4 +1,3 @@
-import { IconHexagonLetterS } from "@tabler/icons-react";
 import SideBar from "./SideBar";
 import { useMediaQuery } from "@mantine/hooks";
 import { em } from "@mantine/core";
@@ -10,7 +9,7 @@ const navLinks=(col:Boolean, clicked:any)=>{
         if(clicked)clicked();
     }
     return links.map((link, index)=>{
-        return  <a key={index} onClick={handleClick} className={`${col?'flex flex-col items-center':''} text-textColor text-lg font-mono hover:text-primaryColor`} href={`#${link}`}><span className="text-primaryColor">0{index+1}. </span>{link}</a>
+        return  <a key={index} onClick={handleClick} className={`${col?'flex flex-col items-center':''} text-textColor text-[1.05rem] font-mono font-semibold tracking-wide hover:text-primaryColor transition-colors`} href={`#${link}`}><span className="text-primaryColor">0{index+1}. </span>{link}</a>
     })
 }
 
@@ -31,9 +30,14 @@ const Header=()=>{
         return ()=>window.removeEventListener('scroll', controlNavbar);
     })
 return (
-    <nav className={`flex ${show?"translate-y-0":"-translate-y-28"} ${shadow?"shadow-[0px_10px_30px_-10px_#020c1b]":""} transition-transform duration-500 ease-in-out fixed w-full z-10 bg-bgColor h-28  px-10  justify-between items-center xs-mx:px-4 xs-mx:h-20 `}>
-        
-        <IconHexagonLetterS className="z-10" size={isMobile?45:60} color="#64FFDA" stroke={1.25}/>
+    <nav className={`flex ${show?"translate-y-0":"-translate-y-28"} ${shadow?"shadow-[0px_10px_30px_-10px_rgba(6,12,22,0.45)]":""} transition-transform duration-500 ease-in-out fixed w-full z-10 bg-[#0d1a2d]/55 backdrop-blur-md border-b border-white/5 h-28  px-10  justify-between items-center xs-mx:px-4 xs-mx:h-20 `}>
+
+        <div className="relative z-10">
+            <div className={`${isMobile ? "w-11 h-11" : "w-14 h-14"} absolute -inset-[2px] rounded-2xl bg-gradient-to-br from-teal-300 via-cyan-300 to-emerald-400 blur-[6px] opacity-55`}></div>
+            <div className={`${isMobile ? "w-11 h-11 text-base" : "w-14 h-14 text-xl"} relative rounded-2xl bg-[#0d1b31] border border-primaryColor/70 text-primaryColor flex items-center justify-center font-extrabold tracking-tight shadow-[0_0_18px_0_#2DD4BF70]`}>
+                SD
+            </div>
+        </div>
         <div className="bs:flex gap-8 hidden">
             {navLinks(false, null)}
         </div>

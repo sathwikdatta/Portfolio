@@ -3,23 +3,34 @@
 @tailwind utilities;
 
  html{
-    --primary-color:"#64FFDA";
+    --primary-color: #2DD4BF;
     scroll-behavior: smooth;
+ }
+ body {
+   margin: 0;
+   background:
+     radial-gradient(circle at 10% 10%, rgba(45, 212, 191, 0.14), transparent 32%),
+     radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.1), transparent 36%),
+     linear-gradient(165deg, #07101d 0%, #0a1424 48%, #0f1d33 100%);
+   color: #eaf2ff;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
  }
  ::-webkit-scrollbar-track
  {
    border-radius: 10px;
-   background-color: #112240;
+   background-color: #0a1424;
  }
  
 ::-webkit-scrollbar
  {
    width: 4px;
-   background-color: #112240;
+   background-color: #0a1424;
  }
  
  ::-webkit-scrollbar-thumb
  {
    border-radius: 10px;
-   background-color: #64FFDA;
+   background-color: #2dd4bf;
  }

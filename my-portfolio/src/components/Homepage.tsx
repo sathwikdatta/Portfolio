@@ -8,7 +8,6 @@ import { Loader } from "./Loader";
 import Mail from "./Mail";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Social from "./Social";
 import { Toaster } from "react-hot-toast";
 
 const HomePage = () => {
@@ -29,7 +28,6 @@ const HomePage = () => {
         <Contact />
         <Footer/>
         <Mail />
-        <Social />
         </>:
         <Loader/>}
     </div>

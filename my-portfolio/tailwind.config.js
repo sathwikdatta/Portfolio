@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bgColor: "#112240",
-        primaryColor: "#64FFDA",
-        textColor: "#8892B0"
+        bgColor: "#0A1424",
+        primaryColor: "#2DD4BF",
+        textColor: "#B7C6DE"
+      },
+      fontFamily: {
+        mono: ["Sora", "Segoe UI", "Tahoma", "sans-serif"],
       },
       animation: {
         backgroundPositionSpin:
